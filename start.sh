@@ -1,6 +1,6 @@
 #!/bin/bash -e
 
-sudo docker run -it --rm \
+sudo docker run -d --rm \
 	-p 7777:7777 \
 	-v $(pwd)/data:/root/.local/share/Terraria/Worlds:Z \
 	ryshe/terraria:vanilla-latest \
